@@ -1,0 +1,164 @@
+#timeline {
+	font-size: 20px;
+	font-weight: 300;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+@media ( min-width : 768px) {
+	.timelineitem:nth-child(odd) {
+		margin-left: 50%;
+		border-left: 5px solid #333;
+		text-align: left;
+	}
+	.timelineitem:nth-child(even) {
+		margin-right: 50%;
+		margin-left: 5px;
+		border-right: 5px solid #333;
+		text-align: right;
+	}
+	.timelineitem {
+		width: 50%;
+		position: relative;
+		padding: 20px;
+	}
+	.timelineitem:nth-child(odd):before {
+		left: -8px;
+	}
+	.timelineitem:nth-child(even):before {
+		right: -8px;
+	}
+}
+
+.timelineitem:before {
+	width: 11px;
+	height: 11px;
+	background: #333;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	border-radius: 5px;
+}
+
+@media ( max-width : 768px) {
+	.timelineitem {
+		border-left: 5px solid #333;
+		text-align: left;
+		margin-left: 10px;
+		padding: 5px;
+		position: relative;
+	}
+	.timelineitem:before {
+		left: -8px;
+	}
+}
+
+.tdate {
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: -5px;
+	color: rgb(132, 0, 0);
+}
+
+.ttitle {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.tdesc {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+@media ( max-width : 768px) {
+	.tdate {
+		font-size: 16px;
+	}
+	.ttitle {
+		font-size: 16px;
+	}
+	.tdesc {
+		font-size: 16px;
+	}
+}
+
+.publication, .project {
+	
+}
+
+.pub {
+	
+}
+
+.pubimg {
+	text-align: center;
+	border: 3px solid white;
+	margin-top: 20px;
+}
+
+.projimg {
+	border: 1px solid gray;
+	width: 200px;
+	text-align: center;
+}
+
+
+.pub-divider {
+	padding-top: 5px; /* Space out the Bootstrap <hr> more */
+	padding-bottom: 5px;
+}
+
+.pub-heading {
+	font-size: 30px;
+	font-weight: 400;
+	margin-bottom : 5px;
+}
+
+.pub-subHeading {
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom : 15px;
+}
+
+
+.indi_pubs {
+	margin-bottom: 50px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #DDD;
+}
+
+.pub-abstract {
+	font-size: 18px;
+}
+
+.pub-auth {
+	font-size: 18px;
+	color: #34495e;
+	font-weight: 400;
+}
+
+.pub-conf {
+	font-size: 18px;
+}
+
+.pub-links {
+	padding-top: 10px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.pub-links li {
+	border: 1px solid #CCC;
+	padding: 5px;
+	margin: 5px 2px;
+	display: inline-block;
+}
+
+.pub-links:before {
+	padding-top: 10px;
+}
