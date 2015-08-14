@@ -193,7 +193,7 @@ a:after {
 	color: white;
 }
 
-a [class^="icon-"], a [class*=" icon-"] {
+a [class^="fa-"], a [class*=" fa-"] {
 	color:white;
 	font-size: 40px;
 	padding-left: 10px;
@@ -235,6 +235,7 @@ a [class^="icon-"], a [class*=" icon-"] {
 #skillswrap h5, p {
 	color: white;
 }
+
 
 #footwrap {
 	background: #2f2f2f;
